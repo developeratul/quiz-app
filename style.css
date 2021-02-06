@@ -19,8 +19,9 @@
 }
 
 #Content #ContentWrapper {
+  width: 450px;
   background: azure;
-  padding: 30px 50px;
+  padding: 30px 0px;
   border-radius: 10px;
 }
 
@@ -29,6 +30,7 @@
   padding: 10px 0px;
   color: dodgerblue;
   text-shadow: 1px 1px 5px #b6b6b6;
+  text-align: center;
 }
 
 #Content #ContentWrapper ul {
@@ -92,6 +94,45 @@
 @media screen and (max-width: 768px) {
   * {
     cursor: default !important;
+  }
+  #ContentWrapper {
+    width: 50vw !important;
+  }
+  #ContentWrapper h2 {
+    font-size: 1.5rem !important;
+  }
+  #ContentWrapper #SubmitButton button {
+    font-size: 1.2rem !important;
+  }
+}
+
+@media screen and (max-width: 615px) {
+  #ContentWrapper {
+    width: 60vw !important;
+  }
+}
+
+@media screen and (max-width: 493px) {
+  #ContentWrapper {
+    width: 70vw !important;
+  }
+}
+
+@media screen and (max-width: 413px) {
+  #ContentWrapper {
+    width: 80vw !important;
+  }
+}
+
+@media screen and (max-width: 390px) {
+  #ContentWrapper {
+    width: 90vw !important;
+  }
+}
+
+@media screen and (max-width: 321px) {
+  #ContentWrapper {
+    width: 97vw !important;
   }
 }
 /*# sourceMappingURL=style.css.map */
