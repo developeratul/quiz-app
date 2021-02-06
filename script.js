@@ -23,6 +23,62 @@ const qustionDataBase = [
     option4: 'All are correct',
     ans: 'answer4',
   },
+  {
+    question: 'which is wrong here?',
+    option1: 'var x = 10;',
+    option2: 'x = 10',
+    option3: 'let x = 10;',
+    option4: 'const x = 10;',
+    ans: 'answer2',
+  },
+  {
+    question: 'What is git?',
+    option1: 'version control system',
+    option2: 'A ugly thing',
+    option3: 'Distributed version control system',
+    option4: 'A useful stuff',
+    ans: 'answer3',
+  },
+  {
+    question: 'Which is correct?',
+    option1: '<html><body>...</body></html>',
+    option2: '<body><html>...</html></body>',
+    option3: '<script><head>...</head></script>',
+    option4: 'All are correct.',
+    ans: 'answer1',
+  },
+  {
+    question: 'Which is unchangeable',
+    option1: 'var x = 10;',
+    option2: 'let x = 10;',
+    option3: 'const x = 10;',
+    option4: 'All are unchangeable.',
+    ans: 'answer3',
+  },
+  {
+    question: 'How many kinds of loops are here in js?',
+    option1: '2',
+    option2: '6',
+    option3: '1',
+    option4: '5',
+    ans: 'answer4',
+  },
+  {
+    question: 'What does an array called in js?',
+    option1: 'Array',
+    option2: 'Object',
+    option3: 'String',
+    option4: 'Boolean',
+    ans: 'answer2',
+  },
+  {
+    question: 'Which is the best js Library?',
+    option1: 'ReactJs',
+    option2: 'JQuery',
+    option3: 'Angular',
+    option4: 'Vue',
+    ans: 'answer1',
+  },
 ]
 
 // getting referrence
@@ -80,4 +136,4 @@ submitButton.addEventListener('click', () => {
       `
   }
 })
-console.log(qustionDataBase[questionCount].ans)
+console.log(typeof ['Ratul'])
