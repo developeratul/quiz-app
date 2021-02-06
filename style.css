@@ -1,0 +1,97 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+#Content {
+  height: 100vh;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  background: linear-gradient(45deg, rgba(0, 204, 255, 0.726), rgba(0, 110, 255, 0.836)), url(./img/Bg.jpg);
+  background-position: center;
+  background-size: 100% 100%;
+  background-attachment: fixed;
+}
+
+#Content #ContentWrapper {
+  background: azure;
+  padding: 30px 50px;
+  border-radius: 10px;
+}
+
+#Content #ContentWrapper h2 {
+  font-size: 2rem;
+  padding: 10px 0px;
+  color: dodgerblue;
+  text-shadow: 1px 1px 5px #b6b6b6;
+}
+
+#Content #ContentWrapper ul {
+  text-align: center;
+  padding: 10px 0px;
+}
+
+#Content #ContentWrapper ul li {
+  list-style: none;
+  padding: 5px 0px;
+  font-size: 1.1rem;
+}
+
+#Content #ContentWrapper ul li label {
+  cursor: pointer;
+}
+
+#Content #ContentWrapper #SubmitButton {
+  text-align: center;
+}
+
+#Content #ContentWrapper #SubmitButton button {
+  padding: 10px 20px;
+  font-size: 1.5rem;
+  display: inline-block;
+  min-width: 150px;
+  text-align: center;
+  margin: 10px auto;
+  background: dodgerblue;
+  color: white;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+
+#Content #ContentWrapper #SubmitButton button:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #00e1ff;
+  border-radius: 5px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  z-index: -1;
+  -webkit-transform: translateX(-100%);
+          transform: translateX(-100%);
+}
+
+#Content #ContentWrapper #SubmitButton button:hover:before {
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+}
+
+@media screen and (max-width: 768px) {
+  * {
+    cursor: default !important;
+  }
+}
+/*# sourceMappingURL=style.css.map */
