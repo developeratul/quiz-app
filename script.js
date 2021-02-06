@@ -118,6 +118,12 @@ const goCheckAnswer = () => {
   return answers
 }
 
+const deselectAll = () => {
+  usersAnswer.forEach((data) => {
+    data.checked = false
+  })
+}
+
 submitButton.addEventListener('click', () => {
   const checkAnswer = goCheckAnswer()
   console.log(checkAnswer)
@@ -126,6 +132,7 @@ submitButton.addEventListener('click', () => {
     score++
   }
   questionCount++
+  deselectAll()
   if (questionCount < qustionDataBase.length) {
     mainFunc()
   } else {
@@ -136,4 +143,3 @@ submitButton.addEventListener('click', () => {
       `
   }
 })
-console.log(typeof ['Ratul'])
